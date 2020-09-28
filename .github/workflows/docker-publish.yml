@@ -26,3 +26,5 @@ jobs:
         run: |
             docker build . --file Dockerfile --tag yachujeng/spark:${GITHUB_REF##*/} --pull --rm
             docker push yachujeng/spark:${GITHUB_REF##*/}
+            docker tag yachujeng/spark:${GITHUB_REF##*/} yachujeng/spark:latest
+            docker push yachujeng/spark:latest
