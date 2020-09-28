@@ -15,7 +15,7 @@ services:
   app:
     image: yachujeng/spark:py3.6.5
     volumes:
-      - work:/home/jovyan
+      - ./work:/home/jovyan
     build:
       context: .
       dockerfile: Dockerfile
