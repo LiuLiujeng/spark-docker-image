@@ -1,4 +1,4 @@
-FROM liuliujeng/pyspark-notebook:2.4.4-jdk8
+FROM yachujeng/pyspark-notebook:2.4.4-jdk8
 
 # name your environment and choose python 3.x version
 ARG conda_env=python36

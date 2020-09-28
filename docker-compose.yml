@@ -1,7 +1,7 @@
 version: '3'
 services:
   base:
-    image: liuliujeng/pyspark-notebook:2.4.4-jdk8
+    image: yachujeng/pyspark-notebook:2.4.4-jdk8
     build:
       context: ./docker-stacks/pyspark-notebook
       args:
@@ -13,7 +13,7 @@ services:
       - 8888:8888
       - 4040:4040
   app:
-    image: liuliujeng/spark:py3.6.5
+    image: yachujeng/spark:py3.6.5
     volumes:
       - work:/home/jovyan
     build:
